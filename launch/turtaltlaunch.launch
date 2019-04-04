@@ -1,0 +1,8 @@
+<launch>
+
+	<rosparam command="load" file="$(find lab1pd)/parameters/params.yaml"/>
+
+	<node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+	<node pkg="lab1pd" name="turtle" type="turtalt.py"/>
+
+</launch>
